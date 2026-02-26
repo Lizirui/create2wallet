@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Hardhat
+contracts/cache/
+contracts/artifacts/
+contracts/typechain-types/
+contracts/coverage/
+contracts/coverage.json
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Next / build (for later app)
+.next/
+out/
+build/
+dist/
+
+# IDE
+.idea/
+*.swp
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
