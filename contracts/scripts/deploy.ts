@@ -1,5 +1,10 @@
 import { ethers } from "hardhat";
 
+/**
+ * 部署 WalletFactory 到当前网络（如 Sepolia）。
+ * Factory 用于通过 CREATE2 部署 Create2Wallet；本脚本会再部署一个示例钱包（owner = deployer）。
+ * 需配置 SEPOLIA_RPC_URL 与 DEPLOYER_PRIVATE_KEY（部署 Sepolia 时）。
+ */
 async function main() {
   const [deployer] = await ethers.getSigners();
   console.log("Deploying with account:", deployer.address);
